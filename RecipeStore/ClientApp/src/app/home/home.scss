@@ -1,0 +1,9 @@
+.recipes > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  app-recipe-card{
+    width: 30%;
+  }
+}

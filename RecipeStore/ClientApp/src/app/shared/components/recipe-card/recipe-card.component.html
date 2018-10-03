@@ -1,0 +1,9 @@
+<div class="notebook-paper">
+  <header>
+    <h1>{{ recipe.title }}</h1>
+  </header>
+  <div class="content">
+    <div class="hipsum">
+      <p *ngFor="let r of recipe.ingredients">{{r.ingredient.quantity}} {{r.ingredient.measure}} {{r.ingredient.name}}</p>
+    </div>
+  </div>

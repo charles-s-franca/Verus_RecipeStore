@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { RecipeService } from './services/recipe/recipe.service';
+import { RecipeCardComponent } from './shared/components/recipe-card/recipe-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RecipeService } from './services/recipe/recipe.service';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    RecipeCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
