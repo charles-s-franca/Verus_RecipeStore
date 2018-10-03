@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore", "RecipeStore\RecipeStore.csproj", "{78AFE8AD-B57C-4859-89B4-0B4E1AD5B859}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E862EA7F-5F53-42F8-9872-224D846498E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Domain", "..\..\aspnetcore\RecipeStore\RecipeStore.Domain\RecipeStore.Domain.csproj", "{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Entity", "..\..\aspnetcore\RecipeStore\RecipeStore.Entity\RecipeStore.Entity.csproj", "{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Helpers", "..\..\aspnetcore\RecipeStore\RecipeStore.Helpers\RecipeStore.Helpers.csproj", "{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Repository.EntityFramework", "..\..\aspnetcore\RecipeStore\RecipeStore.Repository.EntityFramework\RecipeStore.Repository.EntityFramework.csproj", "{CA7B2015-500E-4E99-81B9-ACDF77289197}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Services", "..\..\aspnetcore\RecipeStore\RecipeStore.Services\RecipeStore.Services.csproj", "{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStoreViewModel", "..\..\aspnetcore\RecipeStore\RecipeStoreViewModel\RecipeStoreViewModel.csproj", "{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F0D384E7-BDC6-4645-9331-E4E17EBAAAD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Integration.Tests", "..\..\aspnetcore\RecipeStore\RecipeStore.Integration.Tests\RecipeStore.Integration.Tests.csproj", "{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Repository.EntityFramework.Tests", "..\..\aspnetcore\RecipeStore\RecipeStore.Repository.EntityFramework.Tests\RecipeStore.Repository.EntityFramework.Tests.csproj", "{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Services.Tests", "..\..\aspnetcore\RecipeStore\RecipeStore.Services.Tests\RecipeStore.Services.Tests.csproj", "{0BF3BA39-5D9D-447F-B216-12636636D672}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78AFE8AD-B57C-4859-89B4-0B4E1AD5B859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AFE8AD-B57C-4859-89B4-0B4E1AD5B859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AFE8AD-B57C-4859-89B4-0B4E1AD5B859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AFE8AD-B57C-4859-89B4-0B4E1AD5B859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7B2015-500E-4E99-81B9-ACDF77289197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7B2015-500E-4E99-81B9-ACDF77289197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7B2015-500E-4E99-81B9-ACDF77289197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7B2015-500E-4E99-81B9-ACDF77289197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF3BA39-5D9D-447F-B216-12636636D672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF3BA39-5D9D-447F-B216-12636636D672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF3BA39-5D9D-447F-B216-12636636D672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF3BA39-5D9D-447F-B216-12636636D672}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60} = {E862EA7F-5F53-42F8-9872-224D846498E4}
+		{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2} = {E862EA7F-5F53-42F8-9872-224D846498E4}
+		{AB158777-0E29-4F3C-B5B7-3DA15947F6F8} = {E862EA7F-5F53-42F8-9872-224D846498E4}
+		{CA7B2015-500E-4E99-81B9-ACDF77289197} = {E862EA7F-5F53-42F8-9872-224D846498E4}
+		{C52AE18B-8AC7-42E2-80A2-AE718FA033CA} = {E862EA7F-5F53-42F8-9872-224D846498E4}
+		{28D3592B-4683-4DE8-8D9E-396F5D9FC32C} = {E862EA7F-5F53-42F8-9872-224D846498E4}
+		{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889} = {F0D384E7-BDC6-4645-9331-E4E17EBAAAD2}
+		{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F} = {F0D384E7-BDC6-4645-9331-E4E17EBAAAD2}
+		{0BF3BA39-5D9D-447F-B216-12636636D672} = {F0D384E7-BDC6-4645-9331-E4E17EBAAAD2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DE38D10-055F-424F-9382-3AE53765950E}
+	EndGlobalSection
+EndGlobal
