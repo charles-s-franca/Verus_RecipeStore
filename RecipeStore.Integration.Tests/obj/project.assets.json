@@ -70,6 +70,18 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -2068,6 +2080,7 @@
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
           "Microsoft.Extensions.Configuration": "2.1.1",
@@ -2227,6 +2240,19 @@
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.xml",
         "microsoft.entityframeworkcore.2.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Design/2.0.0": {
+      "sha512": "v8e4OwmK+BIm7jINmGJaQz1+r6BiFl+bGJNVUF4JQZ9H40keeTIHEgKDxdEr+24EdllfLLKTisEziq1H089TYg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/2.0.0",
+      "files": [
+        "lib/net461/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net461/Microsoft.EntityFrameworkCore.Design.xml",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.2.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/2.0.0": {
@@ -2432,10 +2458,11 @@
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
-      "sha512": "6ZCllUYGFukkymSTx3Yr0G/ajRxoNJp7/FqSxSB4fGISST54ifBhgu4Nc0ItGi3i6DqwuNd8SUyObmiC++AO2Q==",
+      "sha512": "h6XT8ejlUsMH81O2+7N8GBD5htW1DLkHCYWwKnjup9NW2b/iEccmvyDqjQJl8e9mPC1XtlUap12w+Mfe94vxUQ==",
       "type": "package",
       "path": "microsoft.extensions.logging.abstractions/2.0.0",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
@@ -2443,10 +2470,11 @@
       ]
     },
     "Microsoft.Extensions.Options/2.0.0": {
-      "sha512": "sAKBgjl2gWsECBLLR9K54T7/uZaP2n9GhMYHay/oOLfvpvX0+iNAlQ2NJgVE352C9Fs5CDV3VbNTK8T2aNKQFA==",
+      "sha512": "IaIQbVgAm8RaYRvBPMAvZ3jPM6JsmxytCFLB9gABHbVMC7GX2lZSxo3N2hZc0HkiRr51GV+ns9SC2TdM7mA9rw==",
       "type": "package",
       "path": "microsoft.extensions.options/2.0.0",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "microsoft.extensions.options.2.0.0.nupkg.sha512",
@@ -5460,11 +5488,10 @@
       ]
     },
     "System.Reflection.TypeExtensions/4.4.0": {
-      "sha512": "JRxOAH6by+wn1gNnZc9jf2HbO/szhMJuLY2w44nEW77354WntXlFzWSVkx6280Uvcl3URZ/At+444vjX0/X1Aw==",
+      "sha512": "dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
       "type": "package",
       "path": "system.reflection.typeextensions/4.4.0",
       "files": [
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -6978,38 +7005,43 @@
     ]
   },
   "packageFolders": {
-    "/Users/charlesfranca/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\charl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Integration.Tests/RecipeStore.Integration.Tests.csproj",
+      "projectUniqueName": "C:\\workspaces\\charles\\Verus\\RecipeStore.Integration.Tests\\RecipeStore.Integration.Tests.csproj",
       "projectName": "RecipeStore.Integration.Tests",
-      "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Integration.Tests/RecipeStore.Integration.Tests.csproj",
-      "packagesPath": "/Users/charlesfranca/.nuget/packages/",
-      "outputPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Integration.Tests/obj/",
+      "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Integration.Tests\\RecipeStore.Integration.Tests.csproj",
+      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+      "outputPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Integration.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/charlesfranca/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework/RecipeStore.Repository.EntityFramework.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework/RecipeStore.Repository.EntityFramework.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework\\RecipeStore.Repository.EntityFramework.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework\\RecipeStore.Repository.EntityFramework.csproj"
             },
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Services/RecipeStore.Services.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Services/RecipeStore.Services.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Services\\RecipeStore.Services.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Services\\RecipeStore.Services.csproj"
             }
           }
         }
@@ -7040,7 +7072,6 @@
             "version": "[15.6.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

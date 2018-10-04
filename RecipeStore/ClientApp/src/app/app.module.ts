@@ -34,7 +34,8 @@ import { NewingredientComponent } from './pages/newingredient/newingredient.comp
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' }
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'newrecipe', component: NewrecipeComponent }
     ])
   ],
   providers: [
