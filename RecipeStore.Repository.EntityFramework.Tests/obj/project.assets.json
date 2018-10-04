@@ -2379,10 +2379,11 @@
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions/2.0.0": {
-      "sha512": "6ZCllUYGFukkymSTx3Yr0G/ajRxoNJp7/FqSxSB4fGISST54ifBhgu4Nc0ItGi3i6DqwuNd8SUyObmiC++AO2Q==",
+      "sha512": "h6XT8ejlUsMH81O2+7N8GBD5htW1DLkHCYWwKnjup9NW2b/iEccmvyDqjQJl8e9mPC1XtlUap12w+Mfe94vxUQ==",
       "type": "package",
       "path": "microsoft.extensions.logging.abstractions/2.0.0",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
@@ -2390,10 +2391,11 @@
       ]
     },
     "Microsoft.Extensions.Options/2.0.0": {
-      "sha512": "sAKBgjl2gWsECBLLR9K54T7/uZaP2n9GhMYHay/oOLfvpvX0+iNAlQ2NJgVE352C9Fs5CDV3VbNTK8T2aNKQFA==",
+      "sha512": "IaIQbVgAm8RaYRvBPMAvZ3jPM6JsmxytCFLB9gABHbVMC7GX2lZSxo3N2hZc0HkiRr51GV+ns9SC2TdM7mA9rw==",
       "type": "package",
       "path": "microsoft.extensions.options/2.0.0",
       "files": [
+        ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "microsoft.extensions.options.2.0.0.nupkg.sha512",
@@ -6814,44 +6816,49 @@
     ]
   },
   "packageFolders": {
-    "/Users/charlesfranca/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\charl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework.Tests/RecipeStore.Repository.EntityFramework.Tests.csproj",
+      "projectUniqueName": "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework.Tests\\RecipeStore.Repository.EntityFramework.Tests.csproj",
       "projectName": "RecipeStore.Repository.EntityFramework.Tests",
-      "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework.Tests/RecipeStore.Repository.EntityFramework.Tests.csproj",
-      "packagesPath": "/Users/charlesfranca/.nuget/packages/",
-      "outputPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework.Tests/obj/",
+      "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework.Tests\\RecipeStore.Repository.EntityFramework.Tests.csproj",
+      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+      "outputPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/charlesfranca/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/RecipeStore.Domain.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/RecipeStore.Domain.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Domain\\RecipeStore.Domain.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Domain\\RecipeStore.Domain.csproj"
             },
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/RecipeStore.Entity.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/RecipeStore.Entity.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Entity\\RecipeStore.Entity.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Entity\\RecipeStore.Entity.csproj"
             },
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/RecipeStore.Helpers.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/RecipeStore.Helpers.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Helpers\\RecipeStore.Helpers.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Helpers\\RecipeStore.Helpers.csproj"
             },
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework/RecipeStore.Repository.EntityFramework.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Repository.EntityFramework/RecipeStore.Repository.EntityFramework.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework\\RecipeStore.Repository.EntityFramework.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Repository.EntityFramework\\RecipeStore.Repository.EntityFramework.csproj"
             }
           }
         }
@@ -6878,7 +6885,6 @@
             "version": "[15.6.0, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

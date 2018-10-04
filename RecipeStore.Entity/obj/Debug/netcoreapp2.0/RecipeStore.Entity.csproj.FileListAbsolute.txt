@@ -22,3 +22,15 @@ C:/workspaces/aspnetcore/RecipeStore/RecipeStore.Entity/obj/Debug/netcoreapp2.0/
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/obj/Debug/netcoreapp2.0/RecipeStore.Entity.csproj.CopyComplete
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/obj/Debug/netcoreapp2.0/RecipeStore.Entity.dll
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/obj/Debug/netcoreapp2.0/RecipeStore.Entity.pdb
+C:\workspaces\charles\Verus\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Entity.deps.json
+C:\workspaces\charles\Verus\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Entity.dll
+C:\workspaces\charles\Verus\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Entity.pdb
+C:\workspaces\charles\Verus\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Domain.dll
+C:\workspaces\charles\Verus\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Domain.pdb
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.csprojResolveAssemblyReference.cache
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.csproj.CoreCompileInputs.cache
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.AssemblyInfoInputs.cache
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.AssemblyInfo.cs
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.csproj.CopyComplete
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.dll
+C:\workspaces\charles\Verus\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.pdb

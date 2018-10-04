@@ -68,5 +68,37 @@ namespace RecipeStore.Services.Implementation
 
             return response;
         }
+
+        public UpdateRecipeResponse UpdateRecipes(UpdateRecipeRequest request)
+        {
+            var response = new UpdateRecipeResponse();
+            var recipe = _recipeRepository.Single(request.model.Id.Value);
+            if (request.model.Ingredients != null && request.model.Ingredients.Count() > 0)
+            {
+                var items = new List<RecipeItem>();
+                foreach (var item in request.model.Ingredients)
+                {
+                    var newItem = new RecipeItem
+                    {
+                        IngredientId = item.IngredientId,
+                        Measure = (Measure)item.Measure,
+                        Quantity = item.Quantity
+                    };
+                    items.Add(newItem);
+                }
+                recipe.Ingredients = items.AsEnumerable();
+            }
+            return response;
+        }
+
+        public DeleteRecipeResponse DeleteRecipes(DeleteRecipeRequest request)
+        {
+            var response = new DeleteRecipeResponse();
+            var recipe = _recipeRepository.Single(request.recipeId);
+            _recipeRepository.Delete(recipe);
+            _unitOfWork.Commit();
+            response.status = true;
+            return response;
+        }
     }
 }

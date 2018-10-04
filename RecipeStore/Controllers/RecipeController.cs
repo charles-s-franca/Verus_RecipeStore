@@ -56,5 +56,23 @@ namespace RecipeStore.Controllers
                 return ApiResponse<RecipeViewModel>.CreateResponse(false, "An unexpected error occured.", null, code: HttpStatusCode.InternalServerError);
             }
         }
+
+        [HttpDelete("{id}")]
+        public ApiResponse<bool> DeleteRecipe(Guid id)
+        {
+            try
+            {
+                return ApiResponse<bool>.CreateResponse(true, "", _recipeService.DeleteRecipes(new Services.Message.DeleteRecipeRequest() { recipeId = id }).status);
+            }
+            catch (BusinessRuleException ex)
+            {
+                return ApiResponse<bool>.CreateResponse(false, ex.Message, false, rules: ex.brokenRules, code: HttpStatusCode.BadRequest);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex);
+                return ApiResponse<bool>.CreateResponse(false, "An unexpected error occured.", false, code: HttpStatusCode.InternalServerError);
+            }
+        }
     }
 }

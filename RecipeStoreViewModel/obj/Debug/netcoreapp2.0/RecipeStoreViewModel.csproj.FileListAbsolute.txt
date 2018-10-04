@@ -16,3 +16,12 @@ C:/workspaces/aspnetcore/RecipeStore/RecipeStoreViewModel/obj/Debug/netcoreapp2.
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStoreViewModel/obj/Debug/netcoreapp2.0/RecipeStoreViewModel.dll
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStoreViewModel/obj/Debug/netcoreapp2.0/RecipeStoreViewModel.pdb
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStoreViewModel/obj/Debug/netcoreapp2.0/RecipeStoreViewModel.csprojAssemblyReference.cache
+C:\workspaces\charles\Verus\RecipeStoreViewModel\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.deps.json
+C:\workspaces\charles\Verus\RecipeStoreViewModel\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.dll
+C:\workspaces\charles\Verus\RecipeStoreViewModel\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.pdb
+C:\workspaces\charles\Verus\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.csprojResolveAssemblyReference.cache
+C:\workspaces\charles\Verus\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.csproj.CoreCompileInputs.cache
+C:\workspaces\charles\Verus\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.AssemblyInfoInputs.cache
+C:\workspaces\charles\Verus\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.AssemblyInfo.cs
+C:\workspaces\charles\Verus\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.dll
+C:\workspaces\charles\Verus\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.pdb

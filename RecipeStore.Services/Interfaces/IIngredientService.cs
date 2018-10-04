@@ -7,5 +7,6 @@ namespace RecipeStore.Services.Interfaces
         GetIngredientsResponse GetIngredients(GetIngredientsRequest request);
         AddIngredientResponse AddIngredients(AddIngredientRequest request);
         DeleteIngredientResponse DeleteIngredient(DeleteIngredientRequest request);
+        UpdateIngredientResponse UpdateIngredient(UpdateIngredientRequest request);
     }
 }

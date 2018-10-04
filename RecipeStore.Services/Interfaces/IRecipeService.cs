@@ -6,5 +6,7 @@ namespace RecipeStore.Services.Interfaces
     {
         GetReciepesResponse GetRecipes(GetRecipesRequest request);
         AddRecipeResponse AddRecipes(AddRecipeRequest request);
+        UpdateRecipeResponse UpdateRecipes(UpdateRecipeRequest request);
+        DeleteRecipeResponse DeleteRecipes(DeleteRecipeRequest request);
     }
 }

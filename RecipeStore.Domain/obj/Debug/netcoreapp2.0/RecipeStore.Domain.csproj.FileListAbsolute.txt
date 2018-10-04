@@ -16,3 +16,12 @@ C:/workspaces/aspnetcore/RecipeStore/RecipeStore.Domain/obj/Debug/netcoreapp2.0/
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/obj/Debug/netcoreapp2.0/RecipeStore.Domain.dll
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/obj/Debug/netcoreapp2.0/RecipeStore.Domain.pdb
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/obj/Debug/netcoreapp2.0/RecipeStore.Domain.csprojAssemblyReference.cache
+C:\workspaces\charles\Verus\RecipeStore.Domain\bin\Debug\netcoreapp2.0\RecipeStore.Domain.deps.json
+C:\workspaces\charles\Verus\RecipeStore.Domain\bin\Debug\netcoreapp2.0\RecipeStore.Domain.dll
+C:\workspaces\charles\Verus\RecipeStore.Domain\bin\Debug\netcoreapp2.0\RecipeStore.Domain.pdb
+C:\workspaces\charles\Verus\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.csprojResolveAssemblyReference.cache
+C:\workspaces\charles\Verus\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.csproj.CoreCompileInputs.cache
+C:\workspaces\charles\Verus\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.AssemblyInfoInputs.cache
+C:\workspaces\charles\Verus\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.AssemblyInfo.cs
+C:\workspaces\charles\Verus\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.dll
+C:\workspaces\charles\Verus\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.pdb

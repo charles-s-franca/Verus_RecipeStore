@@ -43,8 +43,26 @@ namespace RecipeStore.Services.Implementation {
         }
 
         public DeleteIngredientResponse DeleteIngredient(DeleteIngredientRequest request) {
-            var response = new GetIngredientsResponse ();
-            response.list = _ingredientRepository.GetAll (request.filter, request.orderBy).ToIngredientViewModel ();
+            var response = new DeleteIngredientResponse();
+            var ingredient = _ingredientRepository.Single(request.ingredientId);
+
+            _ingredientRepository.Delete(ingredient);
+            _unitOfWork.Commit();
+
+            response.status = true;
+            return response;
+        }
+
+        public UpdateIngredientResponse UpdateIngredient(UpdateIngredientRequest request)
+        {
+            var response = new UpdateIngredientResponse();
+            var ingredient = _ingredientRepository.Single(request.model.Id);
+            ingredient.Name = request.model.Name;
+
+            _ingredientRepository.Update(ingredient);
+            _unitOfWork.Commit();
+
+            response.ingredient = ingredient.ToIngredientViewModel();
             return response;
         }
     }
