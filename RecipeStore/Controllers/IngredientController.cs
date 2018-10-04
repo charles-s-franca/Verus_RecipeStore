@@ -57,7 +57,7 @@ namespace RecipeStore.Controllers
             }
         }
 
-        [HttpPost("")]
+        [HttpPut("")]
         public ApiResponse<IngredientViewModel> UpdateIngredient([FromBody] IngredientViewModel model)
         {
             try
