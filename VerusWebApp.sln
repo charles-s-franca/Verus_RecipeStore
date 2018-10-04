@@ -7,25 +7,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore", "RecipeStore\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E862EA7F-5F53-42F8-9872-224D846498E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Domain", "..\..\aspnetcore\RecipeStore\RecipeStore.Domain\RecipeStore.Domain.csproj", "{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Domain", "RecipeStore.Domain\RecipeStore.Domain.csproj", "{3E7FFE06-F4C1-4FD4-92F0-5BF59F64AA60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Entity", "..\..\aspnetcore\RecipeStore\RecipeStore.Entity\RecipeStore.Entity.csproj", "{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Entity", "RecipeStore.Entity\RecipeStore.Entity.csproj", "{683F6EB7-1F95-4D41-AA6E-15B0D492EEB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Helpers", "..\..\aspnetcore\RecipeStore\RecipeStore.Helpers\RecipeStore.Helpers.csproj", "{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Helpers", "RecipeStore.Helpers\RecipeStore.Helpers.csproj", "{AB158777-0E29-4F3C-B5B7-3DA15947F6F8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Repository.EntityFramework", "..\..\aspnetcore\RecipeStore\RecipeStore.Repository.EntityFramework\RecipeStore.Repository.EntityFramework.csproj", "{CA7B2015-500E-4E99-81B9-ACDF77289197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Repository.EntityFramework", "RecipeStore.Repository.EntityFramework\RecipeStore.Repository.EntityFramework.csproj", "{CA7B2015-500E-4E99-81B9-ACDF77289197}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Services", "..\..\aspnetcore\RecipeStore\RecipeStore.Services\RecipeStore.Services.csproj", "{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Services", "RecipeStore.Services\RecipeStore.Services.csproj", "{C52AE18B-8AC7-42E2-80A2-AE718FA033CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStoreViewModel", "..\..\aspnetcore\RecipeStore\RecipeStoreViewModel\RecipeStoreViewModel.csproj", "{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStoreViewModel", "RecipeStoreViewModel\RecipeStoreViewModel.csproj", "{28D3592B-4683-4DE8-8D9E-396F5D9FC32C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F0D384E7-BDC6-4645-9331-E4E17EBAAAD2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Integration.Tests", "..\..\aspnetcore\RecipeStore\RecipeStore.Integration.Tests\RecipeStore.Integration.Tests.csproj", "{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Integration.Tests", "RecipeStore.Integration.Tests\RecipeStore.Integration.Tests.csproj", "{C61BE2B8-2D20-4F2B-8DB0-028CB4B42889}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Repository.EntityFramework.Tests", "..\..\aspnetcore\RecipeStore\RecipeStore.Repository.EntityFramework.Tests\RecipeStore.Repository.EntityFramework.Tests.csproj", "{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Repository.EntityFramework.Tests", "RecipeStore.Repository.EntityFramework.Tests\RecipeStore.Repository.EntityFramework.Tests.csproj", "{1CD27E16-E721-40A8-9A86-CE0C1B3D4C0F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Services.Tests", "..\..\aspnetcore\RecipeStore\RecipeStore.Services.Tests\RecipeStore.Services.Tests.csproj", "{0BF3BA39-5D9D-447F-B216-12636636D672}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeStore.Services.Tests", "RecipeStore.Services.Tests\RecipeStore.Services.Tests.csproj", "{0BF3BA39-5D9D-447F-B216-12636636D672}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

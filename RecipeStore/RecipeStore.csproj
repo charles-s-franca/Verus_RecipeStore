@@ -25,12 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\aspnetcore\RecipeStore\RecipeStore.Domain\RecipeStore.Domain.csproj" />
-    <ProjectReference Include="..\..\..\aspnetcore\RecipeStore\RecipeStore.Entity\RecipeStore.Entity.csproj" />
-    <ProjectReference Include="..\..\..\aspnetcore\RecipeStore\RecipeStore.Helpers\RecipeStore.Helpers.csproj" />
-    <ProjectReference Include="..\..\..\aspnetcore\RecipeStore\RecipeStore.Repository.EntityFramework\RecipeStore.Repository.EntityFramework.csproj" />
-    <ProjectReference Include="..\..\..\aspnetcore\RecipeStore\RecipeStore.Services\RecipeStore.Services.csproj" />
-    <ProjectReference Include="..\..\..\aspnetcore\RecipeStore\RecipeStoreViewModel\RecipeStoreViewModel.csproj" />
+    <ProjectReference Include="..\RecipeStore.Domain\RecipeStore.Domain.csproj" />
+    <ProjectReference Include="..\RecipeStore.Entity\RecipeStore.Entity.csproj" />
+    <ProjectReference Include="..\RecipeStore.Helpers\RecipeStore.Helpers.csproj" />
+    <ProjectReference Include="..\RecipeStore.Repository.EntityFramework\RecipeStore.Repository.EntityFramework.csproj" />
+    <ProjectReference Include="..\RecipeStore.Services\RecipeStore.Services.csproj" />
+    <ProjectReference Include="..\RecipeStoreViewModel\RecipeStoreViewModel.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

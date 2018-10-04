@@ -664,33 +664,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\charl\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/charlesfranca/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workspaces\\aspnetcore\\RecipeStore\\RecipeStore.Domain\\RecipeStore.Domain.csproj",
+      "projectUniqueName": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/RecipeStore.Domain.csproj",
       "projectName": "RecipeStore.Domain",
-      "projectPath": "C:\\workspaces\\aspnetcore\\RecipeStore\\RecipeStore.Domain\\RecipeStore.Domain.csproj",
-      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\workspaces\\aspnetcore\\RecipeStore\\RecipeStore.Domain\\obj\\",
+      "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/RecipeStore.Domain.csproj",
+      "packagesPath": "/Users/charlesfranca/.nuget/packages/",
+      "outputPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "/Users/charlesfranca/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
