@@ -1,0 +1,9 @@
+<a class="btn-floating btn-lg purple-gradient"><i class="fa fa-bolt"></i></a>
+<a class="btn-floating peach-gradient"><i class="fa fa-leaf"></i></a>
+<a class="btn-floating btn-sm blue-gradient"><i class="fa fa-star"></i></a>
+
+<div class="recipes">
+  <div *ngIf="recipes && recipes.length > 0">
+    <app-recipe-card *ngFor="let r of recipes" [recipe]="r"></app-recipe-card>
+  </div>
+</div>
