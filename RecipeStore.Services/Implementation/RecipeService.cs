@@ -97,10 +97,13 @@ namespace RecipeStore.Services.Implementation
         public DeleteRecipeResponse DeleteRecipes(DeleteRecipeRequest request)
         {
             var response = new DeleteRecipeResponse();
-            var recipe = _recipeRepository.Single(request.recipeId);
-            foreach (var item in recipe.Ingredients)
+            var recipe = _recipeRepository.GetAll(r => r.Id == request.recipeId, null, "Ingredients", "").FirstOrDefault();
+            if (recipe.Ingredients != null && recipe.Ingredients.Count() > 0)
             {
-                _recipeItemRepository.Delete(item);
+                foreach (var item in recipe.Ingredients)
+                {
+                    _recipeItemRepository.Delete(item);
+                }
             }
             _recipeRepository.Delete(recipe);
             _unitOfWork.Commit();
