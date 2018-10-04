@@ -680,35 +680,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/charlesfranca/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\charl\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/RecipeStore.Entity.csproj",
+      "projectUniqueName": "C:\\workspaces\\charles\\Verus\\RecipeStore.Entity\\RecipeStore.Entity.csproj",
       "projectName": "RecipeStore.Entity",
-      "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/RecipeStore.Entity.csproj",
-      "packagesPath": "/Users/charlesfranca/.nuget/packages/",
-      "outputPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Entity/obj/",
+      "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Entity\\RecipeStore.Entity.csproj",
+      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+      "outputPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/charlesfranca/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/RecipeStore.Domain.csproj": {
-              "projectPath": "/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Domain/RecipeStore.Domain.csproj"
+            "C:\\workspaces\\charles\\Verus\\RecipeStore.Domain\\RecipeStore.Domain.csproj": {
+              "projectPath": "C:\\workspaces\\charles\\Verus\\RecipeStore.Domain\\RecipeStore.Domain.csproj"
             }
           }
         }

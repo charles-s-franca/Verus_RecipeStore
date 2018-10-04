@@ -15,6 +15,7 @@ namespace RecipeStore.Services.Tests
         public Mock<IUnitOfWork> _unitOfWork { get; set; }
         public Mock<IRecipeRepository> _recipeRepository { get; set; }
         public Mock<IIngredientRepsitory> _ingredientRepository { get; set; }
+        public Mock<IRecipeItemRepository> _recipeItemRepository { get; set; }
         public IRecipeService _recipeService { get; set; }
 
         [TestInitialize]
@@ -23,10 +24,12 @@ namespace RecipeStore.Services.Tests
             _unitOfWork = new Mock<IUnitOfWork>();
             _recipeRepository = new Mock<IRecipeRepository>();
             _ingredientRepository = new Mock<IIngredientRepsitory>();
+            _recipeItemRepository = new Mock<IRecipeItemRepository>();
             _recipeService = new RecipeService(
                 _unitOfWork.Object, 
                 _recipeRepository.Object, 
-                _ingredientRepository.Object
+                _ingredientRepository.Object,
+                _recipeItemRepository.Object
             );
 
             AutomapperSetup.Config();

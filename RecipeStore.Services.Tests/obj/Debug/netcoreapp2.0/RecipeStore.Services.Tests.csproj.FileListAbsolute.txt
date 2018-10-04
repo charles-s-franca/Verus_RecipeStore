@@ -54,6 +54,10 @@ C:/workspaces/aspnetcore/RecipeStore/RecipeStore.Services.Tests/obj/Debug/netcor
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Services.Tests/obj/Debug/netcoreapp2.0/RecipeStore.Services.Tests.csproj.CopyComplete
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Services.Tests/obj/Debug/netcoreapp2.0/RecipeStore.Services.Tests.dll
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Services.Tests/obj/Debug/netcoreapp2.0/RecipeStore.Services.Tests.pdb
+C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.csprojResolveAssemblyReference.cache
+C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.csproj.CoreCompileInputs.cache
+C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.AssemblyInfoInputs.cache
+C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.AssemblyInfo.cs
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -75,10 +79,6 @@ C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\R
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\RecipeStore.Domain.pdb
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\RecipeStore.Helpers.pdb
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.pdb
-C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.csprojResolveAssemblyReference.cache
-C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.csproj.CoreCompileInputs.cache
-C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.AssemblyInfoInputs.cache
-C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.AssemblyInfo.cs
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.csproj.CopyComplete
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.dll
 C:\workspaces\charles\Verus\RecipeStore.Services.Tests\obj\Debug\netcoreapp2.0\RecipeStore.Services.Tests.pdb
