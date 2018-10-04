@@ -37,6 +37,7 @@ namespace RecipeStore
             services.AddTransient<IIngredientRepsitory, IngredientRepository>();
             services.AddTransient<IRecipeRepository, RecipeRepository>();
             services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
+            services.AddTransient<IRecipeItemRepository, RecipeItemRepository>();
 
             // Services
             services.AddTransient<IRecipeService, RecipeService>();

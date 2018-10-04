@@ -20,6 +20,7 @@ namespace RecipeStore.Integration.Tests
                 _.For<IUnitOfWork>().Use<UnitOfWork>();
                 _.For<IAppContext>().Use<Repository.EntityFramework.AppContext>();
                 _.For<IRecipeRepository>().Use<RecipeRepository>();
+                _.For<IRecipeItemRepository>().Use<RecipeItemRepository>();
                 _.For<IIngredientRepsitory>().Use<IngredientRepository>();
                 _.For<IShoppingCartRepository>().Use<ShoppingCartRepository>();
                 _.For<IRecipeService>().Use<RecipeService>();

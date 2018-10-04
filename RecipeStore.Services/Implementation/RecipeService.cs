@@ -14,16 +14,19 @@ namespace RecipeStore.Services.Implementation
         public IUnitOfWork _unitOfWork { get; set; }
         public IRecipeRepository _recipeRepository { get; set; }
         public IIngredientRepsitory _ingredientRepository { get; set; }
+        public IRecipeItemRepository _recipeItemRepository { get; set; }
 
         public RecipeService(
             IUnitOfWork unitOfWork,
             IRecipeRepository recipeRepository,
-            IIngredientRepsitory ingredientRepository
+            IIngredientRepsitory ingredientRepository,
+            IRecipeItemRepository recipeItemRepository
             )
         {
             _unitOfWork = unitOfWork;
             _recipeRepository = recipeRepository;
             _ingredientRepository = ingredientRepository;
+            _recipeItemRepository = recipeItemRepository;
         }
 
         public AddRecipeResponse AddRecipes(AddRecipeRequest request)
@@ -95,6 +98,10 @@ namespace RecipeStore.Services.Implementation
         {
             var response = new DeleteRecipeResponse();
             var recipe = _recipeRepository.Single(request.recipeId);
+            foreach (var item in recipe.Ingredients)
+            {
+                _recipeItemRepository.Delete(item);
+            }
             _recipeRepository.Delete(recipe);
             _unitOfWork.Commit();
             response.status = true;
