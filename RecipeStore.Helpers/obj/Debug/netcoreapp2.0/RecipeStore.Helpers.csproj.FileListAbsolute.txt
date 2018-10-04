@@ -10,9 +10,9 @@ C:/workspaces/aspnetcore/RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/bin/Debug/netcoreapp2.0/RecipeStore.Helpers.deps.json
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/bin/Debug/netcoreapp2.0/RecipeStore.Helpers.dll
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/bin/Debug/netcoreapp2.0/RecipeStore.Helpers.pdb
-/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.csprojAssemblyReference.cache
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.csproj.CoreCompileInputs.cache
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.AssemblyInfoInputs.cache
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.AssemblyInfo.cs
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.dll
 /Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.pdb
+/Users/charlesfranca/Documents/workspaces/verus/Verus_RecipeStore/RecipeStore.Helpers/obj/Debug/netcoreapp2.0/RecipeStore.Helpers.csprojAssemblyReference.cache

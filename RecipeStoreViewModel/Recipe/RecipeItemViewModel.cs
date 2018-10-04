@@ -8,6 +8,7 @@ namespace RecipeStoreViewModel
     public class RecipeItemViewModel
     {
         public IngredientViewModel Ingredient { get; set; }
+        public Guid IngredientId { get; set; }
         public MeasureViewModel Measure { get; set; }
         public double Quantity { get; set; }
     }
