@@ -1,4 +1,9 @@
 .add-item{
   padding: 20px 0;
   text-align: center;
+  clear: both;
+}
+.bt-container {
+  height: 100%;
+  padding-top: 29px;
 }

@@ -1,14 +1,15 @@
 <form #myForm="ngForm">
   <div class="form-group">
     <label for="inputAddress">Title</label>
-    <input type="text" required #title="ngModel" [(ngModel)]="recipe.title" name="title" class="form-control" id="inputAddress" placeholder="My recipe...">
+    <input type="text" required #title="ngModel" [(ngModel)]="recipe.title" name="title" class="form-control" id="inputAddress"
+      placeholder="My recipe...">
     <div *ngIf="title.invalid && (title.dirty || title.touched || submitted)" class="alert alert-danger">
-        Title is required.
+      Title is required.
     </div>
   </div>
 
   <div class="form-row" *ngFor="let item of recipe.ingredients;let i = index">
-    <div class="form-group col-md-6 no-padding-left">
+    <div class="form-group col-md-4 no-padding-left">
       <label for="ingredient">Ingredient</label>
       <select [(ngModel)]="item.ingredientId" [name]="'ingredientId' + i" [id]="'ingredientId' + i" class="form-control">
         <option selected>Choose...</option>
@@ -17,7 +18,8 @@
     </div>
     <div class="form-group col-md-2 no-padding-right">
       <label for="quantity">Quantity</label>
-      <input [(ngModel)]="item.quantity" [name]="'quantity' + i" [id]="'quantity' + i" type="number" class="form-control" id="quantity">
+      <input [(ngModel)]="item.quantity" [name]="'quantity' + i" [id]="'quantity' + i" type="number" class="form-control"
+        id="quantity">
     </div>
     <div class="form-group col-md-4">
       <label for="measure">Measure</label>
@@ -26,33 +28,38 @@
         <option *ngFor="let m of measures" [value]="m">{{ m | measureDescription }}</option>
       </select>
     </div>
+    <div class="form-group col-md-2">
+      <div class="bt-container">
+        <button (click)="removeItem(i)">Remove</button>
+      </div>
+    </div>
   </div>
 
   <div class="add-item">
-      <a (click)="addOneMoreItem()">Add Ingredient</a>
+    <a (click)="addOneMoreItem()">Add Ingredient</a>
   </div>
 
   <button (click)="submit(myForm)" type="submit" class="btn btn-primary">Save</button>
 </form>
 
 <div>
-    <table *ngIf="recipies && recipies.length > 0" class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Title</th>
-          <th scope="col">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let rec of recipies">
-          <th scope="row">{{ rec.id }}</th>
-          <td>{{ rec.title }}</td>
-          <td>
-            <!-- <button (click)="edit(rec)">Edit</button> -->
-            <button (click)="delete(rec)">Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <table *ngIf="recipies && recipies.length > 0" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rec of recipies">
+        <th scope="row">{{ rec.id }}</th>
+        <td>{{ rec.title }}</td>
+        <td>
+          <!-- <button (click)="edit(rec)">Edit</button> -->
+          <button (click)="delete(rec)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

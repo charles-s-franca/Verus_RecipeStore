@@ -69,6 +69,10 @@ export class NewrecipeComponent implements OnInit {
     }
   }
 
+  removeItem(i) {
+    this.recipe.ingredients.splice(i, 1);
+  }
+
   addOneMoreItem() {
     this.recipe.ingredients.push(new RecipeItem());
   }
