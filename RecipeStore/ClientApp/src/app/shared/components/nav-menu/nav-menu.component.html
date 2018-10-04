@@ -17,11 +17,16 @@
                         <span class='glyphicon glyphicon-list-alt'></span> Recipes
                     </a>
                 </li>
-                <!--<li [routerLinkActive]='["link-active"]'>
-                    <a [routerLink]='["/counter"]' (click)='collapse()'>
-                        <span class='glyphicon glyphicon-education'></span> Counter
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/newrecipe"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-list-alt'></span> Manage Recipes
                     </a>
-                </li>-->
+                </li>
+                <li [routerLinkActive]='["link-active"]'>
+                    <a [routerLink]='["/newingredient"]' (click)='collapse()'>
+                        <span class='glyphicon glyphicon-list-alt'></span> Manage Ingredients
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

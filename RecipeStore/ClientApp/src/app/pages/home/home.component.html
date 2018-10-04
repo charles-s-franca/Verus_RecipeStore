@@ -2,13 +2,20 @@
 <a class="btn-floating peach-gradient"><i class="fa fa-leaf"></i></a>
 <a class="btn-floating btn-sm blue-gradient"><i class="fa fa-star"></i></a>
 
+<div *ngIf="recipe">
+    <app-recipe-card *ngIf="recipe" [recipe]="recipe"></app-recipe-card>
+</div>
+
+<br>
+<br>
+
 <div class="recipes">
   <div *ngIf="recipes && recipes.length > 0">
     <div class="recipes-container">
       <div *ngFor="let r of recipes">
         <app-recipe-card [recipe]="r"></app-recipe-card>
         <div class="shopping-button" (click)="addRemoveItem(r.id)">
-            <button>{{ isItemInCart(r.id) ? 'Remove' : 'Add' }} To Shopping List</button>
+            <button>{{ isItemInCart(r.id) ? 'Remove From' : 'Add To' }} Shopping List</button>
         </div>
       </div>
     </div>

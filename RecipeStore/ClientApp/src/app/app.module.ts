@@ -37,7 +37,7 @@ import { CartService } from './services/cart/cart.service';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'newrecipe', component: NewrecipeComponent },
       { path: 'newingredient', component: NewingredientComponent },
-      { path: 'cart-list', component: ShoppingListComponent }
+      { path: 'shopping-list', component: ShoppingListComponent }
     ])
   ],
   providers: [

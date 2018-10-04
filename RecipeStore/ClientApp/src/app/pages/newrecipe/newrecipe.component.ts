@@ -15,6 +15,7 @@ export class NewrecipeComponent implements OnInit {
   ingredients: Array<Ingredient>;
   recipe = new Recipe();
   recipies: Array<Recipe>;
+  submitted: boolean;
 
   constructor(
     private ingredientService: IngredientService,
@@ -46,11 +47,26 @@ export class NewrecipeComponent implements OnInit {
     });
   }
 
-  submit() {
-    this.recipeService.saveRecipe(this.recipe).then(data => {
-      this.getRecipies();
-      this.recipe = new Recipe();
-    });
+  submit(myForm) {
+    this.submitted = true;
+    if (myForm.valid && this.recipe) {
+      if (this.recipe.ingredients && this.recipe.ingredients.length === 0) {
+        alert('You must add at least one ingredient');
+        return;
+      }
+
+      const notValidIngredients = this.recipe.ingredients.filter(i => !i.quantity || !i.measure || !i.ingredientId);
+      if (notValidIngredients.length > 0) {
+        alert('All recipe items must have a quantity, a measure and an ingredient selected');
+        return;
+      }
+
+      this.recipeService.saveRecipe(this.recipe).then(data => {
+        this.getRecipies();
+        this.recipe = new Recipe();
+        this.submitted = false;
+      });
+    }
   }
 
   addOneMoreItem() {

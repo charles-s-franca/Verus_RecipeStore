@@ -1,7 +1,10 @@
-<form>
+<form #myForm="ngForm">
   <div class="form-group">
     <label for="inputAddress">Title</label>
-    <input type="text" [(ngModel)]="recipe.title" name="title" class="form-control" id="inputAddress" placeholder="My recipe...">
+    <input type="text" required #title="ngModel" [(ngModel)]="recipe.title" name="title" class="form-control" id="inputAddress" placeholder="My recipe...">
+    <div *ngIf="title.invalid && (title.dirty || title.touched || submitted)" class="alert alert-danger">
+        Title is required.
+    </div>
   </div>
 
   <div class="form-row" *ngFor="let item of recipe.ingredients;let i = index">
@@ -29,7 +32,7 @@
       <a (click)="addOneMoreItem()">Add Ingredient</a>
   </div>
 
-  <button (click)="submit()" type="submit" class="btn btn-primary">Create</button>
+  <button (click)="submit(myForm)" type="submit" class="btn btn-primary">Save</button>
 </form>
 
 <div>
@@ -46,7 +49,7 @@
           <th scope="row">{{ rec.id }}</th>
           <td>{{ rec.title }}</td>
           <td>
-            <button (click)="edit(rec)">Edit</button>
+            <!-- <button (click)="edit(rec)">Edit</button> -->
             <button (click)="delete(rec)">Delete</button>
           </td>
         </tr>

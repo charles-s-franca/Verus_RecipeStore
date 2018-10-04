@@ -10,6 +10,7 @@ import { IngredientService } from '../../services/ingredient/ingredient.service'
 export class NewingredientComponent implements OnInit {
   ingredient = new Ingredient();
   ingredients: Array<Ingredient>;
+  submitted: boolean;
 
   constructor(
     private ingredientService: IngredientService
@@ -28,7 +29,6 @@ export class NewingredientComponent implements OnInit {
 
   edit(item: Ingredient) {
     this.ingredient = item;
-    this.submit();
   }
 
   delete(item: Ingredient) {
@@ -37,12 +37,15 @@ export class NewingredientComponent implements OnInit {
     });
   }
 
-  submit() {
-    this.ingredientService.saveIngredient(this.ingredient).then(data => {
-      console.log(data);
-      this.ingredient = new Ingredient();
-      this.getIngredients();
-    });
+  submit(myForm) {
+    if (myForm.valid) {
+      this.ingredientService.saveIngredient(this.ingredient).then(data => {
+        this.ingredient = new Ingredient();
+        this.getIngredients();
+        this.submitted = false;
+      });
+    }
+    this.submitted = true;
   }
 
 }

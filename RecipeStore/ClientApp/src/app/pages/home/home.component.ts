@@ -9,15 +9,26 @@ import { CartService } from '../../services/cart/cart.service';
   styleUrls: ['./home.scss']
 })
 export class HomeComponent {
+  recipe: Recipe;
   recipes: Array<Recipe>;
 
   constructor(
     private recipeService: RecipeService,
     private cartService: CartService
   ) {
+    this.geSuggestion();
+
     recipeService.getRecipes().then(data => {
       this.recipes = data as Array<Recipe>;
       console.log('recipe', this.recipes);
+    });
+  }
+
+  geSuggestion() {
+    this.cartService.getCartSuggestion().then(data => {
+      this.recipe = data as Recipe;
+      this.recipe.title = 'Shopping List';
+      this.recipe.ingredients = (data as any).shoppingCartItems;
     });
   }
 
@@ -35,6 +46,8 @@ export class HomeComponent {
     } else {
       this.removeItemToCart(item);
     }
+
+    this.geSuggestion();
   }
 
   isItemInCart(item) {
