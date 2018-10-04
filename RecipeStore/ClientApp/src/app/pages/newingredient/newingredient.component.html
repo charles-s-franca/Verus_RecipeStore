@@ -1,3 +1,25 @@
-<p>
-  newingredient works!
-</p>
+<form>
+  <div class="form-group">
+    <label for="name">Title</label>
+    <input type="text" [(ngModel)]="ingredient.name" name="name" class="form-control" id="name" placeholder="My recipe...">
+  </div>
+
+  <button (click)="submit()" type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<div>
+  <table *ngIf="ingredients && ingredients.length > 0" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ingredient of ingredients">
+        <th scope="row">{{ ingredient.id }}</th>
+        <td>{{ ingredient.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

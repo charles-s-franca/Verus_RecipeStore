@@ -4,4 +4,5 @@ export class RecipeItem {
   measure: number;
   quantity: number;
   ingredient: Ingredient;
+  ingredientId: string;
 }

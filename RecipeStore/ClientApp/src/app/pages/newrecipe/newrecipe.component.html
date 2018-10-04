@@ -1,0 +1,55 @@
+<form>
+  <div class="form-group">
+    <label for="inputAddress">Title</label>
+    <input type="text" [(ngModel)]="recipe.title" name="title" class="form-control" id="inputAddress" placeholder="My recipe...">
+  </div>
+
+  <div class="form-row" *ngFor="let item of recipe.ingredients;let i = index">
+    <div class="form-group col-md-6 no-padding-left">
+      <label for="ingredient">Ingredient</label>
+      <select [(ngModel)]="item.ingredientId" [name]="'ingredientId' + i" [id]="'ingredientId' + i" class="form-control">
+        <option selected>Choose...</option>
+        <option *ngFor="let ingredient of ingredients" [value]="ingredient.id">{{ ingredient.name }}</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2 no-padding-right">
+      <label for="quantity">Quantity</label>
+      <input [(ngModel)]="item.quantity" [name]="'quantity' + i" [id]="'quantity' + i" type="number" class="form-control" id="quantity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="measure">Measure</label>
+      <select [(ngModel)]="item.measure" [name]="'measure' + i" [id]="'measure' + i" id="measure" class="form-control">
+        <option selected>Choose...</option>
+        <option *ngFor="let m of measures" [value]="m">{{ m | measureDescription }}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="add-item">
+      <a (click)="addOneMoreItem()">Add Ingredient</a>
+  </div>
+
+  <button (click)="submit()" type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<div>
+    <table *ngIf="recipies && recipies.length > 0" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rec of recipies">
+          <th scope="row">{{ rec.id }}</th>
+          <td>{{ rec.title }}</td>
+          <td>
+            <button (click)="edit(rec)">Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

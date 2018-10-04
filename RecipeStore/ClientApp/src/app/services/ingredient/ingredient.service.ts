@@ -1,10 +1,9 @@
 import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Recipe } from '../../infrastructure/model/recipe/recipe';
-import { Newrecipe, Item } from '../../infrastructure/view-model/recipe/newrecipe';
+import { Ingredient } from '../../infrastructure/model/ingredient/ingredient';
 
 @Injectable()
-export class RecipeService {
+export class IngredientService {
 
   constructor(
     private http: HttpClient,
@@ -12,9 +11,9 @@ export class RecipeService {
   ) {
   }
 
-  getRecipes() {
+  getIngredients() {
     return new Promise((resolve, reject) => {
-      this.http.get(this.baseUrl + 'api/recipe').subscribe(response => {
+      this.http.get(this.baseUrl + 'api/ingredient').subscribe(response => {
         resolve((response as any).data);
       }, error => {
         reject(error);
@@ -22,9 +21,9 @@ export class RecipeService {
     });
   }
 
-  saveRecipe(recipe: Recipe) {
+  saveIngredient(ingredient: Ingredient) {
     return new Promise((resolve, reject) => {
-      this.http.post(this.baseUrl + 'api/recipe', recipe)
+      this.http.post(this.baseUrl + 'api/ingredient', ingredient)
         .subscribe(response => {
           resolve((response as any).data);
         }, error => {

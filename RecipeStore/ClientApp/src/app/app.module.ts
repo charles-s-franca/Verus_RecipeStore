@@ -10,11 +10,11 @@ import { RecipeCardComponent } from './shared/components/recipe-card/recipe-card
 import { MeasureDescriptionPipe } from './pipes/measure-description.pipe';
 import { HomeComponent } from './pages/home/home.component';
 import { NavMenuComponent } from './shared/components/nav-menu/nav-menu.component';
-import { IngredientsComponent } from './pages/ingredients/ingredients.component';
 import { IngredientComponent } from './pages/ingredient/ingredient.component';
 import { ShoppingListComponent } from './pages/shopping-list/shopping-list.component';
 import { NewrecipeComponent } from './pages/newrecipe/newrecipe.component';
 import { NewingredientComponent } from './pages/newingredient/newingredient.component';
+import { IngredientService } from './services/ingredient/ingredient.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,6 @@ import { NewingredientComponent } from './pages/newingredient/newingredient.comp
     HomeComponent,
     RecipeCardComponent,
     MeasureDescriptionPipe,
-    IngredientsComponent,
     IngredientComponent,
     ShoppingListComponent,
     NewrecipeComponent,
@@ -35,11 +34,13 @@ import { NewingredientComponent } from './pages/newingredient/newingredient.comp
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'newrecipe', component: NewrecipeComponent }
+      { path: 'newrecipe', component: NewrecipeComponent },
+      { path: 'newingredient', component: NewingredientComponent }
     ])
   ],
   providers: [
-    RecipeService
+    RecipeService,
+    IngredientService
   ],
   bootstrap: [AppComponent]
 })
