@@ -1,3 +1,3 @@
-<p>
-  shopping-list works!
-</p>
+<div *ngIf="recipe">
+    <app-recipe-card *ngIf="recipe" [recipe]="recipe"></app-recipe-card>
+</div>

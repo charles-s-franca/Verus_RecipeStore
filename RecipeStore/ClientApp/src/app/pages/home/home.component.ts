@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RecipeService } from '../../services/recipe/recipe.service';
 import { Recipe } from '../../infrastructure/model/recipe/recipe';
+import { CartService } from '../../services/cart/cart.service';
 
 @Component({
   selector: 'app-home',
@@ -11,11 +12,32 @@ export class HomeComponent {
   recipes: Array<Recipe>;
 
   constructor(
-    private recipeService: RecipeService
+    private recipeService: RecipeService,
+    private cartService: CartService
   ) {
     recipeService.getRecipes().then(data => {
       this.recipes = data as Array<Recipe>;
-      console.log("recipe", this.recipes);
-    })
+      console.log('recipe', this.recipes);
+    });
+  }
+
+  adItemToCart(item) {
+    this.cartService.addRecipe(item);
+  }
+
+  removeItemToCart(item) {
+    this.cartService.removeFromRecipes(item);
+  }
+
+  addRemoveItem(item) {
+    if (!this.cartService.isInRecipeList(item)) {
+      this.adItemToCart(item);
+    } else {
+      this.removeItemToCart(item);
+    }
+  }
+
+  isItemInCart(item) {
+    return this.cartService.isInRecipeList(item);
   }
 }

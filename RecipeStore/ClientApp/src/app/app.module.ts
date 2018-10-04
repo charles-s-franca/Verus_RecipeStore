@@ -15,6 +15,7 @@ import { ShoppingListComponent } from './pages/shopping-list/shopping-list.compo
 import { NewrecipeComponent } from './pages/newrecipe/newrecipe.component';
 import { NewingredientComponent } from './pages/newingredient/newingredient.component';
 import { IngredientService } from './services/ingredient/ingredient.service';
+import { CartService } from './services/cart/cart.service';
 
 @NgModule({
   declarations: [
@@ -35,12 +36,14 @@ import { IngredientService } from './services/ingredient/ingredient.service';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'newrecipe', component: NewrecipeComponent },
-      { path: 'newingredient', component: NewingredientComponent }
+      { path: 'newingredient', component: NewingredientComponent },
+      { path: 'cart-list', component: ShoppingListComponent }
     ])
   ],
   providers: [
     RecipeService,
-    IngredientService
+    IngredientService,
+    CartService
   ],
   bootstrap: [AppComponent]
 })

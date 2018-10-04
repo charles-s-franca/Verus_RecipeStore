@@ -4,6 +4,8 @@
   </header>
   <div class="content">
     <div class="hipsum">
-      <p *ngFor="let r of recipe.ingredients">{{r.quantity}} {{r.measure | measureDescription}} {{r.ingredient.name}}</p>
+      <div *ngIf="recipe && recipe.ingredients">
+          <p *ngFor="let r of recipe.ingredients">{{r.quantity}} {{r.measure | measureDescription}} {{r.ingredient.name}}</p>
+      </div>
     </div>
   </div>

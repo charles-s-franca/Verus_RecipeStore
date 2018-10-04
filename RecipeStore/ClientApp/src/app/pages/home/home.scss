@@ -1,9 +1,17 @@
-.recipes > div {
+.recipes .recipes-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  &> div{
+    margin-right: 30px;
+  }
 
   app-recipe-card{
     width: 30%;
   }
+}
+
+.shopping-button{
+  padding: 20px 0;
+  text-align: center;
 }

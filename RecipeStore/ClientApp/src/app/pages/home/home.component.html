@@ -4,6 +4,13 @@
 
 <div class="recipes">
   <div *ngIf="recipes && recipes.length > 0">
-    <app-recipe-card *ngFor="let r of recipes" [recipe]="r"></app-recipe-card>
+    <div class="recipes-container">
+      <div *ngFor="let r of recipes">
+        <app-recipe-card [recipe]="r"></app-recipe-card>
+        <div class="shopping-button" (click)="addRemoveItem(r.id)">
+            <button>{{ isItemInCart(r.id) ? 'Remove' : 'Add' }} To Shopping List</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
