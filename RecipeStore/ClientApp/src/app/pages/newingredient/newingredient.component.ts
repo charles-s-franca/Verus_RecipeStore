@@ -26,9 +26,21 @@ export class NewingredientComponent implements OnInit {
   ngOnInit() {
   }
 
+  edit(item: Ingredient) {
+    this.ingredient = item;
+    this.submit();
+  }
+
+  delete(item: Ingredient) {
+    this.ingredientService.deleteIngredient(item).then(data => {
+      this.getIngredients();
+    });
+  }
+
   submit() {
     this.ingredientService.saveIngredient(this.ingredient).then(data => {
       console.log(data);
+      this.ingredient = new Ingredient();
       this.getIngredients();
     });
   }

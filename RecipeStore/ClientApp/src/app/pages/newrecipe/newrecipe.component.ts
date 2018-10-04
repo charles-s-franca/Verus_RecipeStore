@@ -41,12 +41,15 @@ export class NewrecipeComponent implements OnInit {
   }
 
   delete(item: Recipe) {
-
+    this.recipeService.deleteRecipe(item).then(data => {
+      this.getRecipies();
+    });
   }
 
   submit() {
     this.recipeService.saveRecipe(this.recipe).then(data => {
-      console.log(data);
+      this.getRecipies();
+      this.recipe = new Recipe();
     });
   }
 

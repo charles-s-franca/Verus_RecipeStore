@@ -24,12 +24,22 @@ export class RecipeService {
 
   saveRecipe(recipe: Recipe) {
     return new Promise((resolve, reject) => {
-      this.http.post(this.baseUrl + 'api/recipe', recipe)
+      this.http.request(recipe.id ? 'put' : 'post', this.baseUrl + 'api/recipe', {body: recipe})
         .subscribe(response => {
           resolve((response as any).data);
         }, error => {
           reject(error);
         });
+    });
+  }
+
+  deleteRecipe(recipe: Recipe) {
+    return new Promise((resolve, reject) => {
+      this.http.delete(this.baseUrl + 'api/recipe/' + recipe.id).subscribe(response => {
+        resolve((response as any).data);
+      }, error => {
+        reject(error);
+      });
     });
   }
 
