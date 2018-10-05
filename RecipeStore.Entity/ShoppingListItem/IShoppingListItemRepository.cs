@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RecipeStore.Entity
 {
-    public interface IShoppingCartRepository : IBaseRepository<ShoppingCart, Guid>
+    public interface IShoppingCartItemRepository : IBaseRepository<ShoppingListItem, Guid>
     {
     }
 }

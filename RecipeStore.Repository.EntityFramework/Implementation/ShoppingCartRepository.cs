@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RecipeStore.Repository.EntityFramework.Implementation
 {
-    public class ShoppingCartRepository : BaseRepository<ShoppingCart, Guid>, IShoppingCartRepository
+    public class ShoppingCartRepository : BaseRepository<ShoppingList, Guid>, IShoppingCartRepository
     {
         public ShoppingCartRepository(IUnitOfWork unit) : base(unit)
         {

@@ -11,13 +11,13 @@ using System.Linq;
 namespace RecipeStore.Services.Tests
 {
     [TestClass]
-    public class ShoppingCartServiceTest
+    public class ShoppingListServiceTest
     {
         public Mock<IUnitOfWork> _unitOfWork { get; set; }
         public Mock<IRecipeRepository> _recipeRepository { get; set; }
         public Mock<IIngredientRepsitory> _ingredientRepository { get; set; }
         public Mock<IShoppingCartRepository> _shoppingCartRepository { get; set; }
-        public IShoppingCartService _shoppingCartService { get; set; }
+        public IShoppingListService _shoppingCartService { get; set; }
 
         [TestInitialize]
         public void Init()
@@ -27,7 +27,7 @@ namespace RecipeStore.Services.Tests
             _ingredientRepository = new Mock<IIngredientRepsitory>();
             _shoppingCartRepository = new Mock<IShoppingCartRepository>();
 
-            _shoppingCartService = new ShoppingCartService(
+            _shoppingCartService = new ShoppingListService(
                 _unitOfWork.Object,
                 _shoppingCartRepository.Object,
                 _ingredientRepository.Object,

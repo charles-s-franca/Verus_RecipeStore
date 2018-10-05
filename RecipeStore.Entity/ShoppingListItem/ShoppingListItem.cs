@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RecipeStore.Entity
 {
-    public class ShoppingCartItem : BaseModel<Guid>
+    public class ShoppingListItem : BaseModel<Guid>
     {
         public virtual Ingredient Ingredient { get; set; }
         public Guid IngredientId { get; set; }

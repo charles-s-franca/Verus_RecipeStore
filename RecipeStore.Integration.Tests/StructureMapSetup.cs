@@ -25,7 +25,7 @@ namespace RecipeStore.Integration.Tests
                 _.For<IShoppingCartRepository>().Use<ShoppingCartRepository>();
                 _.For<IRecipeService>().Use<RecipeService>();
                 _.For<IIngredientService>().Use<IngredientService>();
-                _.For<IShoppingCartService>().Use<ShoppingCartService>();
+                _.For<IShoppingListService>().Use<ShoppingListService>();
             });
 
             StructureMapSetup.Container = container;

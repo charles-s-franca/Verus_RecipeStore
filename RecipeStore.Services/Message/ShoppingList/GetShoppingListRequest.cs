@@ -8,7 +8,7 @@ namespace RecipeStore.Services.Message
 {
     public class GetShoppingCartsRequest
     {
-        public Expression<Func<Entity.ShoppingCart, bool>> filter { get; set; }
-        public Func<IQueryable<Entity.ShoppingCart>, IOrderedQueryable<Entity.ShoppingCart>> orderBy { get; set; }
+        public Expression<Func<Entity.ShoppingList, bool>> filter { get; set; }
+        public Func<IQueryable<Entity.ShoppingList>, IOrderedQueryable<Entity.ShoppingList>> orderBy { get; set; }
     }
 }

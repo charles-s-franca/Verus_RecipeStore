@@ -2,7 +2,7 @@
 
 namespace RecipeStore.Services.Interfaces
 {
-    public interface IShoppingCartService
+    public interface IShoppingListService
     {
         GetShoppingCartsResponse GetShoppingCart(GetShoppingCartsRequest request);
         AddShoppingCartResponse AddShoppingCarts(AddShoppingCartRequest request);

@@ -8,15 +8,15 @@ using System.Collections.Generic;
 namespace RecipeStore.Integration.Tests
 {
     [TestClass]
-    public class ShoppingCartServiceTest
+    public class ShoppingListServiceTest
     {
-        public IShoppingCartService _shoppingCartService { get; set; }
+        public IShoppingListService _shoppingCartService { get; set; }
         [TestInitialize]
         public void Init()
         {
             StructureMapSetup.Config();
             Services.AutomapperSetup.Config();
-            _shoppingCartService = StructureMapSetup.Container.GetInstance<IShoppingCartService>();
+            _shoppingCartService = StructureMapSetup.Container.GetInstance<IShoppingListService>();
         }
 
         [TestMethod]

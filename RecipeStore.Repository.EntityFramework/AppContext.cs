@@ -15,8 +15,8 @@ namespace RecipeStore.Repository.EntityFramework
 
         public DbSet<Recipe> Recipe { get; set; }
         public DbSet<Ingredient> Ingredient { get; set; }
-        public DbSet<ShoppingCart> ShoppingCart { get; set; }
-        public DbSet<ShoppingCartItem> ShoppingCartItem { get; set; }
+        public DbSet<ShoppingList> ShoppingList { get; set; }
+        public DbSet<ShoppingListItem> ShoppingListItem { get; set; }
         public DbSet<RecipeItem> RecipeItem { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

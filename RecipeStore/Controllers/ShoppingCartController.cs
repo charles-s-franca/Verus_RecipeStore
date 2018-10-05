@@ -13,10 +13,10 @@ namespace RecipeStore.Controllers
     [Route("api/cart")]
     public class ShoppingCartController : Controller
     {
-        IShoppingCartService _shoppingCartService;
+        IShoppingListService _shoppingCartService;
 
         public ShoppingCartController(
-            IShoppingCartService shoppingCartService
+            IShoppingListService shoppingCartService
         )
         {
             _shoppingCartService = shoppingCartService;

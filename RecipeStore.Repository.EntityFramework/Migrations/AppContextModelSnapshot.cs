@@ -18,7 +18,7 @@ namespace RecipeStore.Repository.EntityFramework.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
+                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("RecipeStore.Entity.Ingredient", b =>
@@ -79,7 +79,7 @@ namespace RecipeStore.Repository.EntityFramework.Migrations
                     b.ToTable("RecipeItem");
                 });
 
-            modelBuilder.Entity("RecipeStore.Entity.ShoppingCart", b =>
+            modelBuilder.Entity("RecipeStore.Entity.ShoppingList", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -92,10 +92,10 @@ namespace RecipeStore.Repository.EntityFramework.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ShoppingCart");
+                    b.ToTable("ShoppingList");
                 });
 
-            modelBuilder.Entity("RecipeStore.Entity.ShoppingCartItem", b =>
+            modelBuilder.Entity("RecipeStore.Entity.ShoppingListItem", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -106,7 +106,7 @@ namespace RecipeStore.Repository.EntityFramework.Migrations
 
                     b.Property<double>("Quantity");
 
-                    b.Property<Guid?>("ShoppingCartId");
+                    b.Property<Guid?>("ShoppingListId");
 
                     b.Property<DateTime>("createdAt");
 
@@ -116,9 +116,9 @@ namespace RecipeStore.Repository.EntityFramework.Migrations
 
                     b.HasIndex("IngredientId");
 
-                    b.HasIndex("ShoppingCartId");
+                    b.HasIndex("ShoppingListId");
 
-                    b.ToTable("ShoppingCartItem");
+                    b.ToTable("ShoppingListItem");
                 });
 
             modelBuilder.Entity("RecipeStore.Entity.RecipeItem", b =>
@@ -133,16 +133,16 @@ namespace RecipeStore.Repository.EntityFramework.Migrations
                         .HasForeignKey("RecipeId");
                 });
 
-            modelBuilder.Entity("RecipeStore.Entity.ShoppingCartItem", b =>
+            modelBuilder.Entity("RecipeStore.Entity.ShoppingListItem", b =>
                 {
                     b.HasOne("RecipeStore.Entity.Ingredient", "Ingredient")
                         .WithMany()
                         .HasForeignKey("IngredientId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("RecipeStore.Entity.ShoppingCart")
+                    b.HasOne("RecipeStore.Entity.ShoppingList")
                         .WithMany("ShoppingCartItems")
-                        .HasForeignKey("ShoppingCartId");
+                        .HasForeignKey("ShoppingListId");
                 });
 #pragma warning restore 612, 618
         }

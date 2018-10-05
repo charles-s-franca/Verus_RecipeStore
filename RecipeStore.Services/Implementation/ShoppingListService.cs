@@ -11,14 +11,14 @@ using System.Linq.Expressions;
 
 namespace RecipeStore.Services.Implementation
 {
-    public class ShoppingCartService : IShoppingCartService
+    public class ShoppingListService : IShoppingListService
     {
         public IUnitOfWork _unitOfWork { get; set; }
         public IShoppingCartRepository _shoppingCartRepository { get; set; }
         public IIngredientRepsitory _ingredientRepository { get; set; }
         public IRecipeRepository _recipeRepository { get; set; }
 
-        public ShoppingCartService(
+        public ShoppingListService(
             IUnitOfWork unitOfWork,
             IShoppingCartRepository shoppingCartRepository,
             IIngredientRepsitory ingredientRepository,
@@ -34,7 +34,7 @@ namespace RecipeStore.Services.Implementation
         public AddShoppingCartResponse AddShoppingCarts(AddShoppingCartRequest request)
         {
             var response = new AddShoppingCartResponse();
-            var cart = new ShoppingCart
+            var cart = new ShoppingList
             {
                 CartRefCookie = request.model.CartRefCookie
             };
@@ -69,7 +69,7 @@ namespace RecipeStore.Services.Implementation
             var response = new GetShoppingCartSugestionResponse();
             var soppingCartItems = GetRecipeItemsSum(request.filter, request.model.Recipes.ToList());
 
-            var cart = new ShoppingCart()
+            var cart = new ShoppingList()
             {
                 ShoppingCartItems = soppingCartItems.AsEnumerable()
             };
@@ -78,7 +78,7 @@ namespace RecipeStore.Services.Implementation
             return response;
         }
 
-        private List<ShoppingCartItem> GetRecipeItemsSum(Expression<Func<Entity.Recipe, bool>> filter, List<Guid> Recipes)
+        private List<ShoppingListItem> GetRecipeItemsSum(Expression<Func<Entity.Recipe, bool>> filter, List<Guid> Recipes)
         {
             var recipesIds = Recipes.ToArray();
             var recipes = _recipeRepository.GetAll(r => recipesIds.Contains(r.Id), null, "Ingredients", "Ingredients.Ingredient");
@@ -89,9 +89,9 @@ namespace RecipeStore.Services.Implementation
                 ingredients.AddRange(recipe.Ingredients);
             }
 
-            List<ShoppingCartItem> soppingCartItems = ingredients
+            List<ShoppingListItem> soppingCartItems = ingredients
                                         .GroupBy(i => new { i.Ingredient.Id, i.Measure })
-                                        .Select(i => new ShoppingCartItem
+                                        .Select(i => new ShoppingListItem
                                         {
                                             Ingredient = i.FirstOrDefault().Ingredient,
                                             Quantity = i.Sum(item => item.Quantity),
